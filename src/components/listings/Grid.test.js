@@ -17,3 +17,7 @@ const matchData = data[0].title
 test('There is JS in this title', () => { 
     expect(matchData).toMatch(/JS/);
 })
+
+test('The title contains React', () => { 
+    expect(matchData).toContain("React");
+})
