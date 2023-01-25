@@ -21,3 +21,12 @@ test('There is JS in this title', () => {
 test('The title contains React', () => { 
     expect(matchData).toContain("React");
 })
+
+
+// Arrays
+
+const data2 = ['React', 'React Native'];
+
+test('The list of courses to contain React Native and React', () => { 
+    expect(['React', 'React Native', 'MeteorJS']).toEqual(expect.arrayContaining(data2))
+})
