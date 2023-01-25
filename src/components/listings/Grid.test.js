@@ -35,3 +35,7 @@ test('The list of courses to contain React Native and React', () => {
 test('The first course to have a property title', () => { 
     expect(data[0]).toHaveProperty('title');
 })
+
+test('The first course to have a property title and value', () => { 
+    expect(data[0]).toHaveProperty('views','31,266');
+})
