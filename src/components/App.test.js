@@ -1,4 +1,5 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
 import ReactDOM from 'react-dom';
 import App from './App';
 
