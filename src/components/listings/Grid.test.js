@@ -29,19 +29,22 @@ describe('Title test', () => {
     })
 })
 
-// Arrays
+// Arrays & Objects
 
 const data2 = ['React', 'React Native'];
 
-test('The list of courses to contain React Native and React', () => { 
-    expect(['React', 'React Native', 'MeteorJS']).toEqual(expect.arrayContaining(data2))
+describe('Arrays and Object', () => {
+    test('The list of courses to contain React Native and React', () => {
+        expect(['React', 'React Native', 'MeteorJS']).toEqual(expect.arrayContaining(data2))
+    })
+
+    test('The first course to have a property title', () => {
+        expect(data[0]).toHaveProperty('title');
+    })
+
+    test('The first course to have a property title and value', () => {
+        expect(data[0]).toHaveProperty('views', '31,266');
+    })
+
 })
 
-// Objects
-test('The first course to have a property title', () => { 
-    expect(data[0]).toHaveProperty('title');
-})
-
-test('The first course to have a property title and value', () => { 
-    expect(data[0]).toHaveProperty('views','31,266');
-})
