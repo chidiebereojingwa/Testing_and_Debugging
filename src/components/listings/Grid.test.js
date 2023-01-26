@@ -27,8 +27,6 @@ describe('Title test', () => {
     test('The title contains React', () => {
         expect(matchData).toContain("React");
     })
-
-
 })
 
 // Arrays
