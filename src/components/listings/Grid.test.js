@@ -1,8 +1,6 @@
 import data from "../../data/courses.json"
 
-
 const numData = data.length
-
 
 describe('Number test', () => { 
     test('Number of items = 12', () => {
