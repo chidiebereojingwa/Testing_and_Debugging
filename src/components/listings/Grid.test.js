@@ -14,9 +14,6 @@ describe('Number test', () => {
     })
 })
 
-
-
-
 const matchData = data[0].title
 
 describe('Title test', () => { 
